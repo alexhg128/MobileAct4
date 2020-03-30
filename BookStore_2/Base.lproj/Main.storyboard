@@ -49,14 +49,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="3pg-pf-2pa">
                         <rightBarButtonItems>
+                            <barButtonItem systemItem="edit" id="tfs-Wl-37E">
+                                <connections>
+                                    <action selector="toogleEditing:" destination="BYZ-38-t0r" id="zud-TH-Jbf"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem systemItem="refresh" id="j2H-0U-cDu">
                                 <connections>
                                     <action selector="changeOrder:" destination="BYZ-38-t0r" id="rn0-NH-f7O"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem systemItem="trash" id="xda-t3-KSA">
-                                <connections>
-                                    <action selector="deleteOne:" destination="BYZ-38-t0r" id="wzg-Gc-SoI"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem systemItem="add" id="sk9-NW-yYR">
@@ -67,7 +67,9 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="editButton" destination="tfs-Wl-37E" id="ouQ-po-YtH"/>
                         <outlet property="myTableView" destination="bQC-Xs-0kZ" id="7xl-re-7vB"/>
+                        <outlet property="toolbar" destination="3pg-pf-2pa" id="FcZ-2e-vQX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
